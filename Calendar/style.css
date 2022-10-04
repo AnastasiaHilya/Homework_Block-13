@@ -1,0 +1,312 @@
+div{
+    display: block;
+}
+
+body{
+    width: 1000px;
+    height: 730px;
+    margin: 120px auto;
+    position: relative;
+} 
+
+.events{
+    box-sizing: border-box;
+    position: absolute;
+    width: 660px;
+    height: 100%;
+    float: left;
+    background: #FFFFFF;
+}
+
+header{
+    width: 660px;
+    height: 102px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+.current-day{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #243D6F;
+}
+
+.icons{
+    width: 20px;
+    height: 20px; 
+    padding: 10px;
+}
+
+.separation-white-3{
+    position: absolute;
+    width: 560px;
+    height: 2px;
+    top: 92px;
+    left: 50px;     
+    background: #b7b6b6;
+    mix-blend-mode: normal;
+    opacity: 0.13; 
+}
+
+.timeline{
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px;  
+    width: 660px;
+    height: 618px;
+}    
+
+.timeline_hours{
+    position: absolute;
+    height: 580px;
+    float: right;
+    margin-top: 10px;
+}
+.timeline_hours{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    marker: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    color: #8792a1;
+    mix-blend-mode: normal;
+    opacity: 0.6; 
+}
+
+.timeline_events{ 
+    position: absolute;
+    height: 620px;
+    left: 80px;
+    float: left;
+    margin-top: 16px;
+    list-style: none;
+    marker: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.t-09{
+    border-left: solid 3px #7060dd;
+    background-color: #8576ed26;
+}
+
+.t-11, .t-12, .t-13{
+    border-left: solid 3px #4d8cf8;
+    background-color: #3d83f926;  
+}
+ 
+.t-15, .t-16{
+    border-left: solid 3px #efab84;
+    background-color: #eea57c26; 
+}
+
+.timeline_events li{
+    display: block;
+    width: 490px;
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    color: #243D6F;
+}
+
+li p{
+    padding-left: 30px;
+}
+
+.t-12 p{
+    position: absolute;
+    top: 160px;
+}
+
+.t-16 p{
+    position: absolute;
+    top: 340px;   
+}
+
+.timeline_events div{
+    display: block;
+    position: absolute;
+    justify-self: center;
+    width: 490px;
+    height: 2px;
+    background: #b7b6b6;
+    mix-blend-mode: normal;
+    opacity: 0.13; 
+}
+
+.calendar {
+    position: absolute;
+    width: 342px;
+    height: 100%;
+    left: 660px;
+    float: right;
+    background: rgba(42, 46, 65, 0.7);
+}
+
+.top{
+    width: 342px;
+    height: 102px; 
+    left: 660px;
+    float: right;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.month{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.shapes{
+    width: 20px;
+    height: 20px; 
+}
+
+.separation{
+    position: absolute;
+    width: 260px;
+    height: 2px;
+}
+
+.black-1{
+    background: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.17;
+    top: 90px;
+    left: 41px;
+}
+
+.white-1{
+    background: #cccccc;
+    mix-blend-mode: normal;
+    opacity: 0.13;  
+    top: 92px;
+    left: 41px;
+}
+
+.calendar-body{
+    display: block;
+    position: absolute;
+    top: 95px;
+    width: 342px;
+    height: 605px; 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+table{
+    align-self: center;
+    table-layout: fixed;
+    text-align: center;
+    width: 260px;
+    line-height: 50px;  
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+
+td:hover{
+ border-radius: 100px;
+ background-color: #5d96f8;
+}
+
+.calendar-day-name{
+    font-size: 13px;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+.day-next-month{
+    mix-blend-mode: normal;
+    /* opacity: 0.6;  */
+}
+
+.black-2{
+    background: #00000000;
+    mix-blend-mode: normal;
+    opacity: 0.17;
+    top: 470px;
+    left: 41px;
+}
+
+.white-2{
+    background: #cccccc;
+    mix-blend-mode: normal;
+    opacity: 0.13;  
+    top: 472px;
+    left: 41px;
+}
+
+.your-categories{
+    position: absolute;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    color: #FFFFFF;
+    top: 500px;
+    left: 41px;
+}
+
+button{
+    position: absolute;     
+    width: 125px;
+    height: 34px;
+    border-radius: 5px;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+
+.month-next-switch,
+.month-previous-switch {
+    all: initial;
+    all: unset;
+
+
+}
+
+.finance-button{ 
+    top: 550px;
+    left: 41px;    
+    background-color: #8576ED;
+}
+
+.management-button{  
+    top: 550px;
+    left: 176px;    
+    background-color: #F39946;
+}
+
+.design-button{
+    top: 600px;
+    left: 41px;    
+    background-color: #FF467E;
+}
+

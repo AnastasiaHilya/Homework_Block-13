@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="DOM_script.js" defer> </script>
+  </head>
+  <body>
+    <div class="events">
+        <header>
+            <div class="current-day">22 March 2018</div>
+            <div> 
+              <img class="icons" src="images/search.png" alt="search icon"> 
+              <img class="icons" src="images/layout.png" alt="layout icon"> 
+            </div>
+        <div class="separation-white-3"></div>               
+        </header>
+        <div class="timeline">
+            <ul class="timeline_hours">
+                <li>09:00</li>
+                <li>10:00</li>
+                <li>11:00</li>
+                <li>12:00</li>
+                <li>13:00</li>
+                <li>14:00</li>
+                <li>15:00</li>
+                <li>16:00</li>
+                <li>17:00</li>
+                <li>18:00</li>
+                <li>19:00</li>
+                <li>20:00</li>
+            </ul>
+            <ul class="timeline_events">
+                <li class="t-09"><div>  </div> <p>Meet Sophia in airport</p> </li>
+                <li class="t-10"><div>  </div></li>
+                <li class="t-11"><div>  </div></li>
+                <li class="t-12"><div>  </div> <p>Studio workshop</p> </li>
+                <li class="t-13"><div>  </div></li>
+                <li class="t-14"><div>  </div></li>
+                <li class="t-15"><div>  </div></li>
+                <li class="t-16"><div>  </div> <p>Design workshop with Johny Ive</p> </li>
+                <li class="t-17"><div>  </div></li>
+                <li class="t-18"><div>  </div></li>
+                <li class="t-19"><div>  </div></li>
+                <li class="t-20"><div>  </div></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="calendar">
+        <div class="top">
+            <button class="month-previous-switch"><img class="shapes" src="images/shape1.png" alt="prev"></button>            
+            <p class="month">March 2018</p>  
+            <!-- <a href=" "></a> -->
+            <button class="month-next-switch"><img class="shapes" src="images/shape2.png" alt="next"> </button>     
+            <div class="separation black-1"></div>
+            <div class="separation white-1"></div>        
+        </div>
+        <div class="calendar-body">
+            <table>
+              <tbody class="days">
+              <tr class="calendar-day-name">
+                <td>M</td>
+                <td>T</td>
+                <td>W</td>
+                <td>Th</td>
+                <td>F</td>
+                <td>Sat</td>
+                <td>Sun</td>
+              </tr>
+              <tr class="days-of-month">
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+              </tr>
+              <tr class="days-of-month">
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+              </tr>
+              <tr class="days-of-month">
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+              </tr>
+              <tr class="days-of-month">
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+              </tr>
+              <tr class="days-of-month">
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+                <td class="day-next-month">1</td>
+                <td class="day-next-month">2</td>
+                <td class="day-next-month">3</td>
+                <td class="day-next-month">4</td>
+              </tr>  
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+             </tbody>
+            </table>
+        </div>   
+        <div class="separation black-2"></div>
+        <div class="separation white-2"></div>   
+        <div class="categories">
+            <p class="your-categories">Your categories</p> 
+            <button class="finance-button">FINANCE</button>
+            <button class="management-button">MANAGEMENT</button>            
+            <button class="design-button">DESIGN</button>
+        </div>
+    </div>
+</body>
+</html>
